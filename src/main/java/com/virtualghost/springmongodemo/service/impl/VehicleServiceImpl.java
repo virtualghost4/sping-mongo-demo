@@ -40,7 +40,6 @@ public class VehicleServiceImpl implements VehicleService {
     @Override
     public List<Vehicle> getVehicleByBrand(String brand){
         List<Vehicle> vehicleList = vehicleRepository.findbyBrand(brand);
-        logger.info("vehicle list" + vehicleList.get(0));
         return vehicleList;
     }
 
